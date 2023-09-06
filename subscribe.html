@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- NAV -->
-    <div class="shadow bg-white">
+    <div class="shadow dark:bg-gray-800 dark:text-gray-400">
       <div class="h-16 mx-auto px-5 flex items-center justify-between">
         <a class="text-2xl hover:text-cyan-500 cursor-pointer text-violet-400"
           href="index.html"
@@ -50,9 +50,9 @@
         <div class="flex h-full items-center justify-center">
           <div class="px-6 text-center text-white md:px-12">
             <h1
-              class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl"
+              class="mt-2 mb-16 text-5xl font-bold text-transform: capitalize tracking-tight md:text-6xl xl:text-7xl"
             >
-              Find your new favourite band
+            Your new favourite bands
             </h1>
           </div>
         </div>
@@ -60,10 +60,10 @@
     </div>
 
     <main class="mx-10 justify-center">
-      <h1
-              class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl text-center"
-            >Subscribe</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita fugiat, explicabo veritatis incidunt illo? Ut id explicabo soluta reiciendis aspernatur, cum natus quibusdam nesciunt, nobis repudiandae architecto quidem labore enim, quae exercitationem aperiam. Repellat nemo consequuntur aspernatur perferendis aperiam quidem accusamus. Distinctio voluptates fuga doloremque necessitatibus animi ab quae esse, dolor veniam, voluptatibus qui illum. Consequuntur molestiae, maiores doloremque rerum nisi sit placeat vel optio excepturi alias obcaecati minus corporis exercitationem atque, dolor officia voluptatibus, suscipit dolorum eligendi autem. Dicta ea reprehenderit nihil? A debitis doloribus cupiditate nostrum ipsam in, odio veniam vero qui unde doloremque quisquam repudiandae nobis!</p>
+      <h2
+              class="mt-10 text-5xl font-bold text-transform: capitalize tracking-tight md:text-6xl xl:text-7xl text-center"
+            >Subscribe</h2>
+      <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita fugiat, explicabo veritatis incidunt illo? Ut id explicabo soluta reiciendis aspernatur, cum natus quibusdam nesciunt, nobis repudiandae architecto quidem labore enim, quae exercitationem aperiam. Repellat nemo consequuntur aspernatur perferendis aperiam quidem accusamus. Distinctio voluptates fuga doloremque necessitatibus animi ab quae esse, dolor veniam, voluptatibus qui illum. Consequuntur molestiae, maiores doloremque rerum nisi sit placeat vel optio excepturi alias obcaecati minus corporis exercitationem atque, dolor officia voluptatibus, suscipit dolorum eligendi autem. Dicta ea reprehenderit nihil? A debitis doloribus cupiditate nostrum ipsam in, odio veniam vero qui unde doloremque quisquam repudiandae nobis!</p>
 <form class="mt-10 mx-auto border-4 border-black p-10 max-w-2xl">
   <div class="relative z-0 w-full mb-6 group">
       <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
@@ -93,7 +93,7 @@
         <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number</label>
     </div>
   </div>
-  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+  <button type="submit" class="inline-block py-2 px-7 border-2 border-black rounded-full text-body-color font-medium bg-violet-400 hover:bg-violet-600 hover:text-white transition">Submit</button>
 </form>
 
      
@@ -112,23 +112,30 @@
         <ul class="flex flex-wrap items-center sm:mt-0">
           <li>
             <a
-              href="#"
-              class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400"
+              href="index.html"
+              class="mr-4 text-sm text-gray-500 hover:text-cyan-500 md:mr-6 dark:text-gray-400"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="featured.html"
+              class="mr-4 text-sm text-gray-500 hover:text-cyan-500 md:mr-6 dark:text-gray-400"
               >Featured</a
             >
           </li>
           <li>
             <a
-              href="#"
-              class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400"
+              href="venues.html"
+              class="mr-4 text-sm text-gray-500 hover:text-cyan-500 md:mr-6 dark:text-gray-400"
               >Venues
             </a>
           </li>
           <li>
             <a
-              href="#"
-              class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400"
-              >About</a
+              href="subscribe.html"
+              class="mr-4 text-sm text-cyan-500 md:mr-6"
+              >Subscribe</a
             >
           </li>
         </ul>

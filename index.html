@@ -9,11 +9,14 @@
       src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      </style> 
     <title>My Hobby Site</title>
   </head>
   <body>
     <!-- NAV -->
-    <div class="shadow bg-white">
+    <div class="shadow dark:bg-gray-800 dark:text-gray-400">
       <div class="h-16 mx-auto px-5 flex items-center justify-between">
         <a class="text-2xl hover:text-cyan-500 cursor-pointer text-violet-400"
           href="index.html"
@@ -50,9 +53,9 @@
         <div class="flex h-full items-center justify-center">
           <div class="px-6 text-center text-white md:px-12">
             <h1
-              class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl"
+              class="mt-2 mb-16 text-5xl text-transform: capitalize font-bold tracking-tight md:text-6xl xl:text-7xl "
             >
-              Find your new favourite band
+            Your new favourite bands
             </h1>
           </div>
         </div>
@@ -62,7 +65,7 @@
 
     <main class="mx-10 flex justify-center">
       <div class="container">
-        <h2 class="text-5xl leading-tight text-center mt-10">Who We Are</h2>
+        <h2 class="mt-10 text-5xl font-bold text-transform: capitalize tracking-tight md:text-6xl xl:text-7xl text-center">Who We Are Subscribe</h2>
         <p class="mt-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
           inventore hic maxime, reiciendis ipsa dolor laboriosam dolorem, fugit
@@ -71,7 +74,7 @@
           Necessitatibus atque, est ducimus modi omnis laudantium ut quaerat
           aspernatur aliquam distinctio ea quas eius ab?
         </p>
-        <h2 class="text-4xl leading-tight text-center mt-6">Featured Bands</h2>
+        <h2 class="text-4xl leading-tight text-center text-transform: capitalize mt-6">Featured Bands</h2>
 
         <!-- Cards -->
         <div class="flex flex-wrap -mx-4 mt-4">
@@ -172,47 +175,51 @@
         </div>
 
         <div class="relative w-full h-96 border-4 border-black mt-8">
-          <iframe class="absolute top-0 left-0 w-full h-full"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
-              frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-          </iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2380.3474227050856!2d-1.4845642879034946!3d53.37283297218144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1694022806807!5m2!1sen!2suk" class="absolute top-0 left-0 w-full h-full"></iframe>
       </div>
 
       </div>
     </main>
 
-    <!-- FOOTER -->
-    <div class="mx-auto">
-      <footer
-        class="p-4 mt-10 bg-white shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800"
-      >
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-          >© 2022 Matt Stockman. All Rights Reserved.
-        </span>
-        <ul class="flex flex-wrap items-center sm:mt-0">
-          <li>
-            <a
-              href="#"
-              class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400"
-              >Featured</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400"
-              >Venues
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400"
-              >About</a
-            >
-          </li>
-        </ul>
-      </footer>
-    </div>
-  </body>
+<!-- FOOTER -->
+<div class="mx-auto">
+  <footer
+    class="p-4 mt-10 bg-white shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800"
+  >
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+      >© 2022 Matt Stockman. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center sm:mt-0">
+      <li>
+        <a
+          href="index.html"
+          class="mr-4 text-sm text-cyan-500 md:mr-6"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="featured.html"
+          class="mr-4 text-sm text-gray-500 hover:text-cyan-500 md:mr-6 dark:text-gray-400"
+          >Featured</a
+        >
+      </li>
+      <li>
+        <a
+          href="venues.html"
+          class="mr-4 text-sm text-gray-500 hover:text-cyan-500 md:mr-6 dark:text-gray-400"
+          >Venues
+        </a>
+      </li>
+      <li>
+        <a
+          href="subscribe.html"
+          class="mr-4 text-sm text-gray-500 hover:text-cyan-500 md:mr-6 dark:text-gray-400"
+          >Subscribe</a
+        >
+      </li>
+    </ul>
+  </footer>
+</div>
+</body>
 </html>

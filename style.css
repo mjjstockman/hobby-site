@@ -1,41 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    /* font-weight: 400; */
+    line-height: 1.7;
+}
+
 .venue-grid {
     display: grid;
     gap: 1.5em;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-areas:
-        'windmill'
-        'lexington'
-        'garage'
-        'macbeth'
-        'wardrobe';
+        'one'
+        'two'
+        'three'
+        'four'
+        'five';
 }
 
 
-.windmill {
-    grid-area: windmill;
+.one {
+    grid-area: one;
 }
 
-.lexington {
-    grid-area: lexington;
+.two {
+    grid-area: two;
 }
 
-.garage {
-    grid-area: garage;
+.three {
+    grid-area: three;
 }
 
-.macbeth {
-    grid-area: macbeth;
+.four {
+    grid-area: four;
 }
 
-.wardrobe {
-    grid-area: wardrobe;
+.five {
+    grid-area: five;
 }
 
-@media (min-width: 30em) {
+@media (min-width: 50em) {
     .venue-grid {
         grid-template-areas:
-        'lexington windmill'
-        'garage wardrobe'
-        'macbeth macbeth';
+            'one five five'
+            'four four three'
+            'two two two';
     }
 }
