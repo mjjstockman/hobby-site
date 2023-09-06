@@ -1,3 +1,10 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    /* font-weight: 400; */
+    line-height: 1.7;
+}
+
 .venue-grid {
     display: grid;
     gap: 1.5em;
@@ -31,11 +38,11 @@
     grid-area: five;
 }
 
-@media (min-width: 30em) {
+@media (min-width: 50em) {
     .venue-grid {
         grid-template-areas:
-        'two one'
-        'three one'
-        'four five';
+            'one five five'
+            'four four three'
+            'two two two';
     }
 }
