@@ -3,39 +3,39 @@
     gap: 1.5em;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-areas:
-        'one'
-        'two'
-        'three'
-        'four'
-        'five';
+        'windmill'
+        'lexington'
+        'garage'
+        'macbeth'
+        'wardrobe';
 }
 
 
-.one {
-    grid-area: one;
+.windmill {
+    grid-area: windmill;
 }
 
-.two {
-    grid-area: two;
+.lexington {
+    grid-area: lexington;
 }
 
-.three {
-    grid-area: three;
+.garage {
+    grid-area: garage;
 }
 
-.four {
-    grid-area: four;
+.macbeth {
+    grid-area: macbeth;
 }
 
-.five {
-    grid-area: five;
+.wardrobe {
+    grid-area: wardrobe;
 }
 
 @media (min-width: 30em) {
     .venue-grid {
         grid-template-areas:
-        'two one'
-        'three one'
-        'four five';
+        'lexington windmill'
+        'garage wardrobe'
+        'macbeth macbeth';
     }
 }
