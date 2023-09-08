@@ -12,40 +12,40 @@ body {
     display: grid;
     gap: 1.5em;
     grid-template-areas:
-        'one'
-        'two'
-        'three'
-        'four'
-        'five';
+        'windmill'
+        'wardrobe'
+        'lexington'
+        'macbeth'
+        'grace';
 }
 
 
 /* USE GRID-AREA SHORTHAND TO SET UP GRID-ROW AND COL STARTING LINE POSITION */
 .one {
-    grid-area: one;
+    grid-area: windmill;
 }
 
 .two {
-    grid-area: two;
+    grid-area: wardrobe;
 }
 
 .three {
-    grid-area: three;
+    grid-area: lexington;
 }
 
 .four {
-    grid-area: four;
+    grid-area: macbeth;
 }
 
 .five {
-    grid-area: five;
+    grid-area: grace;
 }
 
 @media (min-width: 50em) {
     .venue-grid {
         grid-template-areas:
-            'one five five'
-            'four four three'
-            'two two two';
+            'windmill wardrobe wardrobe'
+            'macbeth macbeth lexington'
+            'grace grace grace';
     }
 }
