@@ -3,26 +3,24 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
-    /* font-weight: 400; */
     line-height: 1.7;
 
 }
 
+/* default order of grid items */
 .venue-grid {
     display: grid;
     gap: 1.5em;
-    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-areas:
         'one'
         'two'
         'three'
         'four'
         'five';
-    /* grid-auto-rows: 1fr;    */
-    
 }
 
 
+/* USE GRID-AREA SHORTHAND TO SET UP GRID-ROW AND COL STARTING LINE POSITION */
 .one {
     grid-area: one;
 }
