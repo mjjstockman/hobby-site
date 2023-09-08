@@ -3,51 +3,49 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
-    /* font-weight: 400; */
     line-height: 1.7;
 
 }
 
+/* default order of grid items */
 .venue-grid {
     display: grid;
     gap: 1.5em;
-    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-areas:
-        'one'
-        'two'
-        'three'
-        'four'
-        'five';
-    /* grid-auto-rows: 1fr;    */
-    
+        'windmill'
+        'wardrobe'
+        'lexington'
+        'macbeth'
+        'grace';
 }
 
 
+/* USE GRID-AREA SHORTHAND TO SET UP GRID-ROW AND COL STARTING LINE POSITION */
 .one {
-    grid-area: one;
+    grid-area: windmill;
 }
 
 .two {
-    grid-area: two;
+    grid-area: wardrobe;
 }
 
 .three {
-    grid-area: three;
+    grid-area: lexington;
 }
 
 .four {
-    grid-area: four;
+    grid-area: macbeth;
 }
 
 .five {
-    grid-area: five;
+    grid-area: grace;
 }
 
 @media (min-width: 50em) {
     .venue-grid {
         grid-template-areas:
-            'one five five'
-            'four four three'
-            'two two two';
+            'windmill wardrobe wardrobe'
+            'macbeth macbeth lexington'
+            'grace grace grace';
     }
 }
